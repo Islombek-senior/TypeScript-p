@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: aqua;
+    }
+    section {
+      width: 80%;
+      height: 90vh;
+      background-color: rgb(168, 247, 168);
+      float: left;
+    }
+    aside {
+      width: 20%;
+      height: 90vh;
+      float: left;
+    }
+  </style>
+
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="logBody">
+            <!-- <label for="text">User Name</label>
+            <input type="text" id="input_1">
+            <label for="password"></label>
+            <input type="password" id="input_2"> -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" id="entarence">
+              Log in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="homeWindows">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+              <button
+                id="loGin"
+                type="button"
+                class="mx-3 rounded-2 btn btn-outline-success"
+              >
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-5">
+        <div class="row justify-content-center" id="category">
+          <!-- <div class="col-12 col-lg-5 col-md-6">
+        <div>
+          <img
+            src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/453.jpg"
+            alt=""
+            width="50"
+          />
+        </div>
+        <div>
+          <h3>fewdas</h3>
+        </div>
+      </div> -->
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="mx-5 mt-4">Products</h2>
+        <div
+          class="row justify-content-center"
+          id="rendertw1"
+          style="justify-content: baseline"
+        >
+          <!-- <div class="col-12 col-lg-10">
+          <div class="d-flex justify-content-center align-content-center">
+            <div class="">
+              <img
+                src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/453.jpg"
+                width="90"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>fasd</h4>
+              <h5>dafsd</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div id="adminWindows" class="d-none">
+      <header class="p-4">
+        <h1 class="text-white test-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nobis.
+        </h1>
+      </header>
+      <aside>
+        <div class="bg-succes">
+          <h4>Admin panel</h4>
+        </div>
+        <div class="bg-danger">
+          <h4>Position panel</h4>
+        </div>
+      </aside>
+      <section>
+        <div class="row justify-content-center p-4">
+          <div class="col-12 col-lg-12 col-md-7 m-4">
+            <div
+              class="d-flex justify-content-around align-content-center rounded-3 p-4 mt-4 bg-white"
+            >
+              <div>
+                <h4>dafd</h4>
+              </div>
+              <div>
+                <h6>adadjfnasdffsdkjsdfksd</h6>
+              </div>
+              <div>
+                <p>Lorem, ipsum dolor sit amet consectetur</p>
+              </div>
+              <div class="d-flex justify-content-around gap-3">
+                <button class="btn btn-outline-success">
+                  <i class="fa fa-edit" aria-hidden="true"></i>
+                </button>
+                <button class="btn btn-outline-danger">
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./system.js"></script>
+    <script src="./dist/index.js"></script>
+    <script>
+      Object.keys(System.registerRegistry).forEach((key) =>
+        System.import(key).then((module) => {
+          //   console.log(document.querySelector("col-4"));
+          //   document.getElementsByTagName("h1")[0].onclick = module.test;
+        })
+      );
+    </script>
+  </body>
+</html>
